@@ -4,5 +4,5 @@
 
 ## Credits
 
-* Style: [yegor256/tacit](https://github.com/yegor256/tacit).
+* Style: [Skeleton](http://getskeleton.com/).
 * Icons: [Font-Awesome](https://github.com/FortAwesome/Font-Awesome).

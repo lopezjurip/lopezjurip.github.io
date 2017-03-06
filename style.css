@@ -1,11 +1,16 @@
+body {
+  margin: 2em 0;
+  font-family: 'Muli', sans-serif;
+}
+
 ul {
   list-style-type: none;
 }
 
-a:link {
+a {
   text-decoration: none;
 }
 
 li {
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
 }
