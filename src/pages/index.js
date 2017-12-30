@@ -4,9 +4,7 @@ import { Grid, Col, Row } from "react-styled-flexboxgrid";
 
 import Cube from "../components/Cube";
 
-const Screen = styled.div`
-  overflow: hidden;
-`;
+const Screen = styled.div``;
 
 const Section = styled.section`
   min-height: 30em;
