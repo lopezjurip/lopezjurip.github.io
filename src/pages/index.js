@@ -19,6 +19,7 @@ const Section = styled.section`
 const HeroSection = styled(Section)`
   background-color: #e8ecee;
   overflow: hidden;
+  position: relative;
 `;
 
 const ContactSection = styled(Section)`
@@ -93,7 +94,7 @@ const IndexPage = () => (
             <HeroContent>
               <Title>Patricio López J.</Title>
               <Row>
-                <Col sm={6}>
+                <Col xs={12} sm={8} md={6}>
                   <Lead>
                     Software Engineer, IT Consultant and Full-stack developer
                     passionate in producing real solutions using the best
