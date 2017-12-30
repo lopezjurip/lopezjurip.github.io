@@ -1,7 +1,8 @@
 import Typography from "typography";
-import lawtonTheme from "typography-theme-lawton";
+import theme from "typography-theme-lawton";
 
-// const typography = new Typography({ baseFontSize: "18px" });
-const typography = new Typography(lawtonTheme);
+theme.bodyFontFamily = ["Helvetica Neue", "serif"];
+theme.baseFontSize = "20px";
+const typography = new Typography(theme);
 
 export default typography;

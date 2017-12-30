@@ -9,6 +9,7 @@
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-styled-components": "^2.0.4",
     "gatsby-plugin-typography": "^1.7.10",
+    "react-animation-frame": "^1.0.1",
     "react-styled-flexboxgrid": "^2.1.1",
     "styled-components": "^2.4.0",
     "typography-theme-lawton": "^0.15.10"
