@@ -134,6 +134,8 @@ export class Cube extends Component {
         size={size}
         onMouseEnter={this.handleMouseEnter}
         onMouseLeave={this.handleMouseLeave}
+        onMouseDown={this.handleMouseLeave}
+        onMouseUp={this.handleMouseEnter}
         {...props}
       >
         <Sides
