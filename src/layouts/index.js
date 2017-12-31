@@ -37,20 +37,20 @@ const TemplateWrapper = ({ children }) => (
           name: "geo.placename",
           content: "Santiago",
         },
-        { name: "og:url", content: "https://lopezjuri.com" },
-        { name: "og:type", content: "website" },
-        { name: "og:title", content: "Patricio López J." },
+        { property: "og:url", content: "https://lopezjuri.com" },
+        { property: "og:type", content: "website" },
+        { property: "og:title", content: "Patricio López J." },
         {
-          name: "og:image",
+          property: "og:image",
           content: "https://lopezjuri.com/favicons/apple-touch-icon.png",
         },
         {
-          name: "og:description",
+          property: "og:description",
           content:
             "Software Engineer, IT Consultant and Full-stack developer passionate in producing real solutions using the best tools available. Interested in state of the art technology. Focused in high quality code and top-tier development/deployment procedures.",
         },
-        { name: "og:site_name", content: "lopezjuri.com" },
-        { name: "og:locale", content: "en_US" },
+        { property: "og:site_name", content: "lopezjuri.com" },
+        { property: "og:locale", content: "en_US" },
         {
           name: "twitter:card",
           content:
