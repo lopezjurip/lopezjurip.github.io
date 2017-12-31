@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
+import GithubCorner from "react-github-corner";
 
 import "./index.css";
 
@@ -72,6 +73,11 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <div>{children()}</div>
+    <GithubCorner
+      href="https://github.com/mrpatiwi/mrpatiwi.github.io/"
+      octoColor="#e8ecee"
+      bannerColor="#6d797a"
+    />
   </div>
 );
 

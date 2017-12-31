@@ -11,6 +11,7 @@
     "gatsby-plugin-styled-components": "^2.0.4",
     "gatsby-plugin-typography": "^1.7.10",
     "react-animation-frame": "^1.0.1",
+    "react-github-corner": "^2.0.0",
     "react-styled-flexboxgrid": "^2.1.1",
     "react-typed": "^1.0.7",
     "styled-components": "^2.4.0",
