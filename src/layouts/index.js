@@ -42,7 +42,7 @@ const TemplateWrapper = ({ children }) => (
         { property: "og:title", content: "Patricio López J." },
         {
           property: "og:image",
-          content: "https://lopezjuri.com/favicons/apple-touch-icon.png",
+          content: "https://lopezjuri.com/favicons/android-chrome-256x256.png",
         },
         {
           property: "og:description",
@@ -67,7 +67,7 @@ const TemplateWrapper = ({ children }) => (
         },
         {
           name: "twitter:image",
-          content: "https://lopezjuri.com/favicons/apple-touch-icon.png",
+          content: "https://lopezjuri.com/favicons/android-chrome-256x256.png",
         },
       ]}
     />
