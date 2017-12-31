@@ -6659,6 +6659,14 @@ react-styled-flexboxgrid@^2.1.1:
   dependencies:
     lodash.isinteger "^4.0.4"
 
+react-typed@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/react-typed/-/react-typed-1.0.7.tgz#38af34c95f5064008965fae4205ca49835461bf8"
+  dependencies:
+    prop-types "^15.6.0"
+    styled-components "^2.2.4"
+    typed.js "^2.0.6"
+
 react-typography@^0.16.1:
   version "0.16.5"
   resolved "https://registry.yarnpkg.com/react-typography/-/react-typography-0.16.5.tgz#86e539430e0efb3a326c9de20d9e3a32662a2a6b"
@@ -7784,7 +7792,7 @@ style-loader@^0.13.0:
   dependencies:
     loader-utils "^1.0.2"
 
-styled-components@^2.4.0:
+styled-components@^2.2.4, styled-components@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-2.4.0.tgz#086d0fd483d54638837fca3ea546a030b94adf75"
   dependencies:
@@ -8061,6 +8069,10 @@ type-is@~1.6.15:
 type-of@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/type-of/-/type-of-2.0.1.tgz#e72a1741896568e9f628378d816d6912f7f23972"
+
+typed.js@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/typed.js/-/typed.js-2.0.6.tgz#4e270f6fbc5e5e94a6c38fa29407c404745a7d61"
 
 typedarray@^0.0.6:
   version "0.0.6"
