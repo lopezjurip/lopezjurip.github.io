@@ -74,7 +74,7 @@ const TemplateWrapper = ({ children }) => (
     />
     <div>{children()}</div>
     <GithubCorner
-      href="https://github.com/mrpatiwi/mrpatiwi.github.io/"
+      href="https://github.com/mrpatiwi/mrpatiwi.github.io/tree/source"
       octoColor="#e8ecee"
       bannerColor="#6d797a"
     />
