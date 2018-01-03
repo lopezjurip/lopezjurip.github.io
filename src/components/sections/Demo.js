@@ -51,10 +51,10 @@ export class DemoSection extends Component {
       <Container>
         <Grid>
           <Row>
-            <Col xs={12} sm={6} md={5} lg={4}>
+            <Col xs={false} sm={5} md={5} lg={4}>
               <StyledLaptopVideo />
             </Col>
-            <Col xs={12} sm={6} md={7} lg={8}>
+            <Col xs={12} sm={7} md={7} lg={8}>
               <ColContent>
                 <Title>{"Let's build something together"}</Title>
                 <StyledTyped
