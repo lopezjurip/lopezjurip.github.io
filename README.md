@@ -1,5 +1,7 @@
 # lopezjuri.com
 
+[![dependencies][dependencies-image]][dependencies-url] [![dev-dependencies][dev-dependencies-image]][dev-dependencies-url] [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
 Professional website built with [GatsbyJS](https://www.gatsbyjs.org/).
 
 ## Develop
@@ -28,3 +30,8 @@ yarn run dev
 ```sh
 yarn run deploy
 ```
+
+[dependencies-image]: https://david-dm.org/mrpatiwi/mrpatiwi.github.io.svg
+[dependencies-url]: https://david-dm.org/mrpatiwi/mrpatiwi.github.io
+[dev-dependencies-image]: https://david-dm.org/mrpatiwi/mrpatiwi.github.io/dev-status.svg
+[dev-dependencies-url]: https://david-dm.org/mrpatiwi/mrpatiwi.github.io#info=devDependencies
