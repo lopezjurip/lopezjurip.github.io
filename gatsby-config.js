@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
     title: "Patricio López J.",
@@ -29,5 +31,12 @@ module.exports = {
       },
     },
     "gatsby-plugin-styled-components",
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: process.env["GOOGLE_TAGMANAGER_ID"],
+        includeInDevelopment: false,
+      },
+    },
   ],
 };

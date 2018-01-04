@@ -27,6 +27,14 @@ yarn run dev
 
 ## Production
 
+Setup enviroment variables:
+
+```text
+GOOGLE_TAGMANAGER_ID=GTM-XXXXXXX
+```
+
+Then run to create and deploy the `master` branch to Github Pages:
+
 ```sh
 yarn run deploy
 ```
