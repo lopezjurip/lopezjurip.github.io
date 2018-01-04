@@ -25,9 +25,10 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build && cp CNAME ./public/CNAME",
+    "publish": "gh-pages --remove '!CNAME' -d public -b master",
+    "deploy": "yarn run build && yarn run publish",
     "develop": "gatsby develop",
-    "deploy": "gatsby build && gh-pages -d public -b master",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
