@@ -32,7 +32,7 @@ export class ContactSection extends Component {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://telegram.me/mrpatiwi"
+              href="https://telegram.me/lopezjurip"
             >
               <ContactItem>Telegram</ContactItem>
             </a>
