@@ -50,7 +50,7 @@ export class ContactSection extends Component {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://twitter.com/mrpatiwi"
+              href="https://twitter.com/lopezjurip"
             >
               <ContactItem>Twitter</ContactItem>
             </a>

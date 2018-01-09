@@ -57,8 +57,8 @@ const TemplateWrapper = ({ children }) => (
           content:
             "Software Engineer, IT Consultant and Full-stack developer passionate in producing real solutions using the best tools available. Interested in state of the art technology. Focused in high quality code and top-tier development/deployment procedures.",
         },
-        { name: "twitter:site", content: "@mrpatiwi" },
-        { name: "twitter:creator", content: "@mrpatiwi" },
+        { name: "twitter:site", content: "@lopezjurip" },
+        { name: "twitter:creator", content: "@lopezjurip" },
         { name: "twitter:url", content: "https://lopezjuri.com" },
         { name: "twitter:title", content: "Patricio López J." },
         {
