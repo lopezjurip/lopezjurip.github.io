@@ -13,7 +13,7 @@ const Container = styled(Section)`
 
 const HeroContent = styled.div`
   position: absolute;
-  margin: 10% auto 0;
+  margin: 8% auto 0;
 `;
 
 const Title = styled.h1`
@@ -35,8 +35,22 @@ const Title = styled.h1`
   }
 `;
 
+const SubTitle = styled.div`
+  padding: 0em 2em 1em;
+  text-rendering: optimizeLegibility;
+`;
+
+const EmailLink = styled.a`
+  color: #6d797a;
+  font-weight: 400;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+`;
+
 const Lead = styled.p`
-  padding: 1em 2em 0;
+  padding: 0.4em 2em 0;
   text-rendering: optimizeLegibility;
 `;
 
@@ -78,6 +92,11 @@ export class HeroSection extends Component {
                 <Title>Patricio López J.</Title>
                 <Row>
                   <Col xs={12} sm={8} md={6}>
+                    <SubTitle>
+                      <EmailLink href="mailto:patricio@lopezjuri.com">
+                        patricio@lopezjuri.com
+                      </EmailLink>
+                    </SubTitle>
                     <Lead>
                       Software Engineer, IT Consultant and Full-stack developer
                       passionate in producing real solutions using the best
