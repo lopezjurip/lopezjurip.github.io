@@ -31,7 +31,7 @@ const Title = styled.h1`
   background-position: 0 90%;
   transition: background-size 0.25s ease-in;
   &:hover {
-    background-size: 100% 88%;
+    background-size: 95% 88%;
   }
 `;
 
@@ -79,15 +79,6 @@ export class HeroSection extends Component {
                   top: "50%",
                 }}
               />
-              <Cube
-                ry={0.4}
-                rx={0.1}
-                size={190}
-                style={{
-                  right: "66%",
-                  bottom: "10%",
-                }}
-              />
               <HeroContent>
                 <Title>Patricio López J.</Title>
                 <Row>
@@ -110,33 +101,6 @@ export class HeroSection extends Component {
                   </Col>
                 </Row>
               </HeroContent>
-              <Cube
-                ry={1}
-                rx={2}
-                size={40}
-                style={{
-                  left: "50%",
-                  top: "50%",
-                }}
-              />
-              <Cube
-                ry={0.1}
-                rx={0.1}
-                size={90}
-                style={{
-                  left: "60%",
-                  top: "70%",
-                }}
-              />
-              <Cube
-                ry={0.2}
-                rx={0.5}
-                size={150}
-                style={{
-                  right: 160,
-                  top: 50,
-                }}
-              />
               <Cube
                 size={80}
                 ry={2}

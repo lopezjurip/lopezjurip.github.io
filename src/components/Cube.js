@@ -128,7 +128,10 @@ export class Cube extends Component {
   handleMouseLeave = () => this.setState({ mouseHover: false });
 
   render() {
-    const { state: { sides, rotation }, props: { size, ...props } } = this;
+    const {
+      state: { sides, rotation },
+      props: { size, ...props },
+    } = this;
     return (
       <Base
         size={size}
@@ -156,4 +159,4 @@ export class Cube extends Component {
   }
 }
 
-export default ReactAnimationFrame(Cube);
+export default ReactAnimationFrame(Cube, 20);
