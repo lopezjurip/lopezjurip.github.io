@@ -5,6 +5,7 @@ module.exports = {
     title: "Patricio López J.",
   },
   plugins: [
+    "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-favicon",
@@ -30,7 +31,6 @@ module.exports = {
         pathToConfigModule: "src/utils/typography.js",
       },
     },
-    "gatsby-plugin-styled-components",
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {

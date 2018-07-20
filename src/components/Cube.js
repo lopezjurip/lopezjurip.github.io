@@ -9,12 +9,12 @@ const Base = styled.div`
   height: ${props => props.size + "px"};
 `;
 
-const Sides = styled(Base)`
+const Sides = Base.extend`
   transform-style: preserve-3d;
   perspective: ${props => 6 * props.size + "px"};
 `;
 
-const Side = styled(Base).attrs({
+const Side = Base.extend.attrs({
   style: props => ({
     transform: transformRotate(props.rotate, props.edge),
   }),

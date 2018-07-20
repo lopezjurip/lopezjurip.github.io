@@ -7,7 +7,7 @@ import Typed from "react-typed";
 import Section from "../Section";
 import LaptopVideo from "../LaptopVideo";
 
-const Container = styled(Section)`
+const Container = Section.extend`
   background-color: #6d797a;
 `;
 

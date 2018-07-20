@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 import Section from "../Section";
 
-const Container = styled(Section)`
+const Container = Section.extend`
   background-color: #e8ecee;
 `;
 

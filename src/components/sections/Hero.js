@@ -5,7 +5,7 @@ import { Grid, Col, Row } from "react-styled-flexboxgrid";
 import Cube from "../Cube";
 import Section from "../Section";
 
-const Container = styled(Section)`
+const Container = Section.extend`
   height: 90vh;
   min-height: 30em;
   background-color: #e8ecee;

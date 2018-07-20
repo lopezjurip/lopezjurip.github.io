@@ -3,7 +3,21 @@ import styled from "styled-components";
 
 import Section from "../Section";
 
-const Container = styled(Section)`
+const Title = styled.h2`
+  color: black;
+  padding: 0.8em;
+  background: linear-gradient(to left, #ffffff, #ffffff) no-repeat -60px -38px;
+  margin: 1.3em auto 1em;
+
+  transform: rotate(-2deg);
+  text-shadow: -4px -4px #eee;
+  font-variant: small-caps;
+  text-transform: lowercase;
+`;
+
+const Container = Section.withComponent("a").extend.attrs({
+  href: "mailto:patricio@lopezjuri.com",
+})`
   background: linear-gradient(to right, #acb6e5, #74ebd5);
   display: flex;
   justify-content: center;
@@ -15,23 +29,15 @@ const Container = styled(Section)`
   border-color: transparent;
   border-image: linear-gradient(to right, #acb6e5 40%, #74ebd5 70%);
   border-image-slice: 1;
-`;
 
-const Title = styled.h2`
-  color: black;
-  padding: 0.8em;
-  background: linear-gradient(to left, #ffffff, #ffffff) no-repeat -60px -38px;
-  margin: 1.3em auto 1em;
-
-  transform: rotate(-2deg);
-  text-shadow: -4px -4px #eee;
-  font-variant: small-caps;
-  cursor: default;
+  cursor: pointer;
 
   &:hover {
-    padding: 0.6em;
-    margin: 1.5em auto 1.2em;
-    text-shadow: -5px -5px #eee;
+    ${Title} {
+      padding: 0.6em;
+      margin: 1.5em auto 1.2em;
+      text-shadow: -5px -5px #eee;
+    }
   }
 `;
 
@@ -43,7 +49,7 @@ export class ConsultingSection extends Component {
   render() {
     return (
       <Container>
-        <Title>Available for IT consulting</Title>
+        <Title>{"Send me an email and let's have a beer"}</Title>
       </Container>
     );
   }
