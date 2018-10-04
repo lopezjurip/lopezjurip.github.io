@@ -38,6 +38,7 @@ export class ContactSection extends Component {
       { text: "Email", href: "mailto:patricio@lopezjuri.com" },
       { text: "Telegram", href: "https://telegram.me/lopezjurip" },
       { text: "Twitter", href: "https://twitter.com/lopezjurip" },
+      { text: "Instagram", href: "https://instagram.com/lopezjurip" },
       { text: "Github", href: "https://github.com/lopezjurip" },
       { text: "LinkedIn", href: "https://cl.linkedin.com/in/lopezjuri" },
       {
