@@ -31,7 +31,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build && cp CNAME ./public/CNAME",
-    "publish": "gh-pages --remove '!CNAME' -d public -b master",
+    "publish": "gh-pages --add CNAME -d public -b master .",
     "deploy": "yarn run build && yarn run publish",
     "develop": "gatsby develop",
     "lint": "eslint .",
