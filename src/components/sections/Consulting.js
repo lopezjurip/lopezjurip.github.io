@@ -15,7 +15,8 @@ const Title = styled.h2`
   text-transform: lowercase;
 `;
 
-const Container = Section.withComponent("a").extend.attrs({
+const Container = styled(Section).attrs({
+  as: "a",
   href: "mailto:patricio@lopezjuri.com",
 })`
   background: linear-gradient(to right, #acb6e5, #74ebd5);

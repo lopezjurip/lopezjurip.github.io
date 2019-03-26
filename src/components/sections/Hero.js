@@ -5,7 +5,7 @@ import { Grid, Col, Row } from "react-styled-flexboxgrid";
 import Cube from "../Cube";
 import Section from "../Section";
 
-const Container = Section.extend`
+const Container = styled(Section)`
   height: 90vh;
   min-height: 30em;
   background-color: #e8ecee;
@@ -89,7 +89,7 @@ export class HeroSection extends Component {
                       </EmailLink>
                     </SubTitle>
                     <Lead>
-                      Software Engineer, IT Consultant and Full-stack developer
+                      Software Engineer, IT Consultant and Full-Stack developer
                       passionate in producing real solutions using the best
                       available tools.
                     </Lead>

@@ -12,11 +12,11 @@ const TemplateWrapper = ({ children }) => (
       meta={[
         {
           name: "description",
-          content: "Software Engineer, IT Consultant and Full-stack developer.",
+          content: "Software Engineer, IT Consultant and Full-Stack developer.",
         },
         {
           name: "subject",
-          content: "Software Engineer, IT Consultant and Full-stack developer.",
+          content: "Software Engineer, IT Consultant and Full-Stack developer.",
         },
         {
           name: "keywords",
@@ -48,14 +48,14 @@ const TemplateWrapper = ({ children }) => (
         {
           property: "og:description",
           content:
-            "Software Engineer, IT Consultant and Full-stack developer passionate in producing real solutions using the best tools available. Interested in state of the art technology. Focused in high quality code and top-tier development/deployment procedures.",
+            "Software Engineer, IT Consultant and Full-Stack developer passionate in producing real solutions using the best available tools in the market. Interested in state of the art technology. Focused in high quality code and top-tier development/deployment procedures.",
         },
         { property: "og:site_name", content: "lopezjuri.com" },
         { property: "og:locale", content: "en_US" },
         {
           name: "twitter:card",
           content:
-            "Software Engineer, IT Consultant and Full-stack developer passionate in producing real solutions using the best tools available. Interested in state of the art technology. Focused in high quality code and top-tier development/deployment procedures.",
+            "Software Engineer, IT Consultant and Full-Stack developer passionate in producing real solutions using the best available tools in the market. Interested in state of the art technology. Focused in high quality code and top-tier development/deployment procedures.",
         },
         { name: "twitter:site", content: "@lopezjurip" },
         { name: "twitter:creator", content: "@lopezjurip" },
@@ -64,7 +64,7 @@ const TemplateWrapper = ({ children }) => (
         {
           name: "twitter:description",
           content:
-            "Software Engineer, IT Consultant and Full-stack developer passionate in producing real solutions using the best tools available. Interested in state of the art technology. Focused in high quality code and top-tier development/deployment procedures.",
+            "Software Engineer, IT Consultant and Full-Stack developer passionate in producing real solutions using the best available tools in the market. Interested in state of the art technology. Focused in high quality code and top-tier development/deployment procedures.",
         },
         {
           name: "twitter:image",
