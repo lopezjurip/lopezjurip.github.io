@@ -37,13 +37,7 @@ export class DemoSection extends Component {
   };
 
   static defaultProps = {
-    strings: [
-      "Mobile Applications",
-      "Web Pages",
-      "Software as a Service",
-      "Business ERP",
-      "Custom APIs",
-    ],
+    strings: ["Mobile apps", "Web Pages", "Blockchain", "dApps", "APIs"],
   };
 
   render() {

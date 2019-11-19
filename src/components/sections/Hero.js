@@ -2,11 +2,10 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Grid, Col, Row } from "react-styled-flexboxgrid";
 
-import Cube from "../Cube";
 import Section from "../Section";
 
 const Container = styled(Section)`
-  height: 90vh;
+  height: 80vh;
   min-height: 30em;
   background-color: #e8ecee;
 `;
@@ -61,24 +60,6 @@ export class HeroSection extends Component {
         <Grid>
           <Row>
             <Col>
-              <Cube
-                ry={1.5}
-                rx={1.5}
-                size={60}
-                style={{
-                  left: 40,
-                  top: 40,
-                }}
-              />
-              <Cube
-                ry={0.1}
-                rx={0.3}
-                size={500}
-                style={{
-                  left: "50%",
-                  top: "50%",
-                }}
-              />
               <HeroContent>
                 <Title>Patricio López J.</Title>
                 <Row>
@@ -101,15 +82,6 @@ export class HeroSection extends Component {
                   </Col>
                 </Row>
               </HeroContent>
-              <Cube
-                size={80}
-                ry={2}
-                rx={1}
-                style={{
-                  right: 100,
-                  bottom: 120,
-                }}
-              />
             </Col>
           </Row>
         </Grid>

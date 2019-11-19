@@ -1,15 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
+import { createGlobalStyle } from "styled-components";
 import GithubCorner from "react-github-corner";
 
-import "./index.css";
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: #e8ecee;
+  }
+`;
 
-const TemplateWrapper = ({ children }) => (
-  <div>
+const Layout = ({ children, ...props }) => (
+  <div {...props}>
+    <GlobalStyle />
     <Helmet
       title="Patricio López J."
       meta={[
+        {
+          name: "viewport",
+          // content: "viewport-fit=cover",
+          content:
+            "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover",
+        },
         {
           name: "description",
           content: "Software Engineer, IT Consultant and Full-Stack developer.",
@@ -23,6 +35,8 @@ const TemplateWrapper = ({ children }) => (
           content: [
             "software consultant",
             "software developer",
+            "blockchain engineer",
+            "web3",
             "chile",
             "santiago",
             "react",
@@ -72,7 +86,7 @@ const TemplateWrapper = ({ children }) => (
         },
       ]}
     />
-    <div>{children()}</div>
+    <div>{children}</div>
     <GithubCorner
       href="https://github.com/lopezjurip/lopezjurip.github.io/tree/source"
       octoColor="#e8ecee"
@@ -81,8 +95,8 @@ const TemplateWrapper = ({ children }) => (
   </div>
 );
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
-export default TemplateWrapper;
+export default Layout;
