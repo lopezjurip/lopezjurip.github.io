@@ -1,17 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Grid, Col, Row } from "react-styled-flexboxgrid";
 
 import Section from "../Section";
 
 const Container = styled(Section)`
-  height: 80vh;
+  height: 60vh;
   min-height: 30em;
   background-color: #e8ecee;
 `;
 
 const HeroContent = styled.div`
-  position: absolute;
   margin: 8% auto 0;
 `;
 
@@ -53,41 +52,36 @@ const Lead = styled.p`
   text-rendering: optimizeLegibility;
 `;
 
-export class HeroSection extends Component {
-  render() {
-    return (
-      <Container>
-        <Grid>
-          <Row>
-            <Col>
-              <HeroContent>
-                <Title>Patricio López J.</Title>
-                <Row>
-                  <Col xs={12} sm={8} md={6}>
-                    <SubTitle>
-                      <EmailLink href="mailto:patricio@lopezjuri.com">
-                        patricio@lopezjuri.com
-                      </EmailLink>
-                    </SubTitle>
-                    <Lead>
-                      Software Engineer, IT Consultant and Full-Stack developer
-                      passionate in producing real solutions using the best
-                      available tools.
-                    </Lead>
-                    <Lead>
-                      Interested in state of the art technology. Focused in high
-                      quality code and top-tier development/deployment
-                      procedures.
-                    </Lead>
-                  </Col>
-                </Row>
-              </HeroContent>
-            </Col>
-          </Row>
-        </Grid>
-      </Container>
-    );
-  }
+export default function HeroSection(props) {
+  return (
+    <Container {...props}>
+      <Grid>
+        <Row>
+          <Col xs={12}>
+            <HeroContent>
+              <Title>Patricio López J.</Title>
+              <Row>
+                <Col xs={12} sm={8} md={6}>
+                  <SubTitle>
+                    <EmailLink href="mailto:patricio@lopezjuri.com">
+                      patricio@lopezjuri.com
+                    </EmailLink>
+                  </SubTitle>
+                  <Lead>
+                    Software Engineer, IT Consultant and Full-Stack developer
+                    passionate in producing real solutions using the best
+                    available tools.
+                  </Lead>
+                  <Lead>
+                    Interested in state of the art technology. Focused in high
+                    quality code and top-tier development/deployment procedures.
+                  </Lead>
+                </Col>
+              </Row>
+            </HeroContent>
+          </Col>
+        </Row>
+      </Grid>
+    </Container>
+  );
 }
-
-export default HeroSection;

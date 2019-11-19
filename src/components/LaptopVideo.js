@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
-import programing from "../assets/videos/programing.mp4";
 
+import programing from "../assets/videos/programing.mp4";
 import "./LaptopVideo.css";
 
 const ProgramingVideo = styled.video.attrs({
@@ -16,27 +16,23 @@ const ProgramingVideo = styled.video.attrs({
   width: auto;
 `;
 
-class LaptopVideo extends Component {
-  render() {
-    return (
-      <div {...this.props}>
-        <div className="pca-hold">
-          <div className="pca-main">
-            <div className="pca-inner">
-              <ProgramingVideo />
-            </div>
-          </div>
-          <div className="pca-sub">
-            <div className="pca-top" />
-            <div className="pca-mid">
-              <div className="pca-part" />
-            </div>
-            <div className="pca-bot" />
+export default function LaptopVideo(props) {
+  return (
+    <div {...props}>
+      <div className="pca-hold">
+        <div className="pca-main">
+          <div className="pca-inner">
+            <ProgramingVideo />
           </div>
         </div>
+        <div className="pca-sub">
+          <div className="pca-top" />
+          <div className="pca-mid">
+            <div className="pca-part" />
+          </div>
+          <div className="pca-bot" />
+        </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
-
-export default LaptopVideo;

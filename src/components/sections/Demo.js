@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { Grid, Col, Row } from "react-styled-flexboxgrid";
@@ -12,7 +12,8 @@ const Container = styled(Section)`
 `;
 
 const StyledLaptopVideo = styled(LaptopVideo)`
-  margin: 2em 0 2em -9em;
+  margin: 2em 0 2em 0em;
+  float: right;
 `;
 
 const ColContent = styled.div`
@@ -31,39 +32,35 @@ const StyledTyped = styled(Typed)`
   font-size: 3em;
 `;
 
-export class DemoSection extends Component {
-  static propTypes = {
-    strings: PropTypes.array.isRequired,
-  };
-
-  static defaultProps = {
-    strings: ["Mobile apps", "Web Pages", "Blockchain", "dApps", "APIs"],
-  };
-
-  render() {
-    return (
-      <Container>
-        <Grid>
-          <Row>
-            <Col xs={false} sm={5} md={5} lg={4}>
-              <StyledLaptopVideo />
-            </Col>
-            <Col xs={12} sm={7} md={7} lg={8}>
-              <ColContent>
-                <Title>{"Let's build something together"}</Title>
-                <StyledTyped
-                  strings={this.props.strings}
-                  typeSpeed={30}
-                  backSpeed={40}
-                  loop
-                />
-              </ColContent>
-            </Col>
-          </Row>
-        </Grid>
-      </Container>
-    );
-  }
+export default function DemoSection({ strings, ...props }) {
+  return (
+    <Container {...props}>
+      <Grid>
+        <Row>
+          <Col xs={false} sm={5} md={5} lg={4}>
+            <StyledLaptopVideo />
+          </Col>
+          <Col xs={12} sm={7} md={7} lg={8}>
+            <ColContent>
+              <Title>{"Let's build something together"}</Title>
+              <StyledTyped
+                strings={strings}
+                typeSpeed={30}
+                backSpeed={40}
+                loop
+              />
+            </ColContent>
+          </Col>
+        </Row>
+      </Grid>
+    </Container>
+  );
 }
 
-export default DemoSection;
+DemoSection.propTypes = {
+  strings: PropTypes.array.isRequired,
+};
+
+DemoSection.defaultProps = {
+  strings: ["Mobile apps", "Web Pages", "Blockchain", "dApps", "APIs"],
+};

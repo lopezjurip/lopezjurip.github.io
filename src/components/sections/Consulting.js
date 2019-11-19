@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import Section from "../Section";
@@ -42,18 +42,12 @@ const Container = styled(Section).attrs({
   }
 `;
 
-export class ConsultingSection extends Component {
-  static propTypes = {};
-
-  static defaultProps = {};
-
-  render() {
-    return (
-      <Container>
-        <Title>{"Send me an email and let's have a beer"}</Title>
-      </Container>
-    );
-  }
+function ConsultingSection(props) {
+  return (
+    <Container {...props}>
+      <Title>{"Send me an email and let's grab a beer"}</Title>
+    </Container>
+  );
 }
 
 export default ConsultingSection;
